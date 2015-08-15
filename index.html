@@ -5,40 +5,101 @@
   <!-- Compiled and minified JavaScript -->
   <script src="materialize.min.js"></script>
           
-          <link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome.min.css">
 <link href="icon.css" rel="stylesheet">
-          
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 
 <div class="slider fullscreen">
   <ul class="slides">
-    <li>
-      <img src="img/1.png">
-      <div class="caption center-align">
+    <li  class="waves-effect waves-blue">
+      <img src="img/1.png" style="opacity:0.3">
+      <div class="caption center-align black-text">
         <h3>Terminal</h3>
-        <h5 class="light grey-text text-lighten-3">without it this world will not survive.</h5>
+        <h5 class="light black-text text-lighten-3">without it this world will not survive.</h5>
+        <a class='btn waves-effect waves-teal'>Learn more</a>
       </div>
     </li>
-    <li>
-      <img src="img/2.png"> 
-      <div class="caption left-align">
+    <li class="waves-effect waves-teal">
+      <img src="img/2.png" style="opacity:0.3"> 
+      <div class="caption left-align black-text">
         <h3>Tweet Tweet</h3>
-        <h5 class="light grey-text text-lighten-3">Facinating space for anaytics.</h5>
+        <h5 class="light black-text text-lighten-3">Facinating space for anaytics.</h5>
+        <a class='btn waves-effect waves-teal'>Learn more</a>
       </div>
     </li>
-    <li>
-      <img src="img/3.png"> 
-      <div class="caption right-align voilet-text">
+    <li class="waves-effect waves-orange">
+      <img src="img/3.png" style="opacity:0.3"> 
+      <div class="caption right-align black-text">
         <p><h3>Request/Response </h3></p>
-        <p><h5 class="light orange-text">Response and response are one of the most orgasmic events.</h5></p>
+        <p><h5 class="light black-text text-lighten-3">Request and response are one of the most orgasmic events.</h5>
+        <a class='btn waves-effect waves-teal'>Learn more</a>
+        
+        </p>
       </div>
     </li>
   </ul>
 </div>
 
+<div id="bottom_footer_nav">
+<a href="#" data-activates="slide-out" class="button-collapse"> <i class="medium material-icons">view_quilt</i></a>
+
+  <ul id="slide-out" class="side-nav waves-effect waves-teal orange" >
+    <li><a href="#!" class="waves-effect waves-teal">Projects</a></li>
+    <li><a href="#!" class="waves-effect waves-teal">Contacts</a></li>
+     <li><a href="#!" class="waves-effect waves-teal">About/Intrests</a></li>
+    <li><a href="#!" class="waves-effect waves-teal">Experience</a></li>
+     <li><a href="#!" class="waves-effect waves-teal">Showcase</a></li>
+    
+    <p style="float:right;">
+    <a href="https://www.facebook.com/chowmean" style="float:right;" class="waves-effect waves-teal"><i class="fa fa-facebook fa-2x"></i></a>
+    <a href="https://www.twitter.com/gauravchowmean"  style="float:right;" class="waves-effect waves-teal"><i class="fa fa-twitter fa-2x"></i></a>
+    <a href="https://www.github.com/chowmean"  style="float:right;" class="waves-effect waves-teal"><i class="fa fa-github fa-2x"></i></a>
+    <a href="https://in.linkedin.com/in/chowmean"  style="float:right;" class="waves-effect waves-teal"><i class="fa fa-linkedin fa-2x"></i></a>
+	</p>
+	
+	<img src="img/3.png" class="circle responsive-img">
+	</img>
+   
+   
+    
+    
+</ul>
+  
+
+
+
+
+
+
+</div>
+
+
+
+<style>
+#bottom_footer_nav
+{
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+height:10%;
+
+z-index:10000;
+}
+</style>
 
 <script>
+
  $(document).ready(function(){
       $('.slider').slider({full_width: true});
+      $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+    
+    
+    
+      $(".button-collapse").sideNav();
     });
         
 
