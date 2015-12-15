@@ -44,11 +44,10 @@
 <div id="bottom_footer_nav">
 <a href="#" data-activates="slide-out" class="button-collapse"> <i class="medium material-icons">view_quilt</i></a>
 
-  <ul id="slide-out" class="side-nav waves-effect waves-teal" >
+  <ul id="slide-out" class="side-nav waves-effect waves-teal orange" >
     <li><a href="#!" class="waves-effect waves-teal">Projects</a></li>
     <li><a href="#!" class="waves-effect waves-teal">Contacts</a></li>
      <li><a href="#!" class="waves-effect waves-teal">About/Intrests</a></li>
-    <li><a href="#!" class="waves-effect waves-teal">Experience</a></li>
      <li><a href="#!" class="waves-effect waves-teal">Showcase</a></li>
     
     <p style="float:right;">
@@ -58,7 +57,7 @@
     <a href="https://in.linkedin.com/in/chowmean"  style="float:right;" class="waves-effect waves-teal"><i class="fa fa-linkedin fa-2x"></i></a>
 	</p>
 	
-	<img src="img/3.png" class="circle responsive-img">
+	<img src="img/img.jpg" class="circle responsive-img">
 	</img>
    
    
