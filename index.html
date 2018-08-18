@@ -31,31 +31,77 @@ Blogger at <a href="https://www.learnsteps.com">Learnsteps</a> and <a href="http
 <a href="mailto:gaurav.dev.iiitm@gamil.com" class="help heading_t"> Need help?</a>
 </div>
 
-<div class="techiknowdiv card col-md-6 hidden">
+<div class="techiknowdiv  col-md-6 hidden">
 <div class="card-header">You can talk to me about:</div>
 
 	
-	<div class="col-md-6">
-		<div class="card">
-	    <div class="card-body">Terraform</div>
+	<div class="col-md-6 ">
+		<div class="card terra">
+	    <div class="card-body"><a href="https://www.terraform.io/">Terraform</a>
+	     </div>
 	  	</div>
 	</div>
 
 	<div class="col-md-6">
-		<div class="card">
-	    <div class="card-body">Chef</div>
+		<div class="card chef">
+	    <div class="card-body"><a href="https://www.chef.io/chef/">Chef</a>
+	    
+	    </div>
 	  	</div>
 	</div>
 
 	<div class="col-md-6">
-		<div class="card">
-	    <div class="card-body">Python</div>
+		<div class="card mesos">
+	    <div class="card-body"><a href="http://mesos.apache.org/">Mesos</a> <a href="https://mesosphere.github.io/marathon/">Marathon</a>
+		</div>
+	</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="card lang">
+	    <div class="card-body">Languages: Python, Go, Javascript, C++, Ruby, Perl, Php</div>
 	  	</div>
 	</div>
 
 	<div class="col-md-6">
-		<div class="card">
+		<div class="card kube">
+	    <div class="card-body">Kubernetes</div>
+	  	</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="card linux">
 	    <div class="card-body">Linux</div>
+	  	</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="card servers">
+	    <div class="card-body">Servers: Apache, Nginx, Haproxy</div>
+	  	</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="card clouds">
+	    <div class="card-body">Cloud: AWS, Azure, Digital Ocean</div>
+	  	</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="card monitoring">
+	    <div class="card-body">Monitoring and logging: Sentry, New relic, Sensu, Prometheus</div>
+	  	</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="card frameworks">
+	    <div class="card-body">Django, Flask, Angular, NodeJs, ROR, Laravel</div>
+	  	</div>
+	</div>
+
+	<div class="col-md-3 close">
+		<div class="card">
+	    <div class="card-body">Close</div>
 	  	</div>
 	</div>
 
@@ -133,6 +179,16 @@ $(".r").css("color", randomColor({luminosity: 'dark'}));
 $(".v").css("color", randomColor({luminosity: 'dark'}));
 $(".y").css("color", randomColor({luminosity: 'dark'}));
 $(".d").css("color", randomColor({luminosity: 'dark'}));
+$(".terra").css("background-color", randomColor({luminosity: 'light'}));
+$(".mesos").css("background-color", randomColor({luminosity: 'light'}));
+$(".servers").css("background-color", randomColor({luminosity: 'light'}));
+$(".monitoring").css("background-color", randomColor({luminosity: 'light'}));
+$(".frameworks").css("background-color", randomColor({luminosity: 'light'}));
+$(".chef").css("background-color", randomColor({luminosity: 'light'}));
+$(".clouds").css("background-color", randomColor({luminosity: 'light'}));
+$(".lang").css("background-color", randomColor({luminosity: 'light'}));
+$(".linux").css("background-color", randomColor({luminosity: 'light'}));
+$(".kube").css("background-color", randomColor({luminosity: 'light'}));
 
 $(".fa-github").css("color", randomColor({luminosity: 'dark'}));
 $(".fa-facebook").css("color", randomColor({luminosity: 'dark'}));
@@ -152,7 +208,14 @@ $(".title").addClass('animated bounceInleft')
 $(".tt").addClass('animated wobble')
 
 $(".techiknow").click(function() {
-  $(".techiknowdiv").removeClass('hidden')
   $(".techiknowdiv").addClass('animated bounceInDown')
+  $(".techiknowdiv").removeClass('hidden animated bounceOutDown')
 });
+
+$(".close").click(function() {
+  $(".techiknowdiv").removeClass('animated bounceInDown')
+  $(".techiknowdiv").addClass('animated bounceOutDown')
+});
+
+
 </script>
