@@ -26,8 +26,8 @@ Blogger at <a href="https://www.learnsteps.com">Learnsteps</a> and <a href="http
 </div>
 <div class="dash">
 <a class="techiknow heading_t" href="#">Technologies I know</a> 
-<a href="https://github.com/chowmean?tab=repositories" class="repos heading_t">My crap repositories</a>
-<a href="https://www.learnsteps.com/contacts/" class="write heading_t">Wanna write for learnsteps?</a>
+<a href="https://github.com/chowmean?tab=repositories" class="repos heading_t">Repositories</a>
+<a href="https://www.learnsteps.com/contacts/" class="write heading_t">Write for learnsteps?</a>
 <a href="mailto:gaurav.dev.iiitm@gamil.com" class="help heading_t"> Need help?</a>
 </div>
 
@@ -172,6 +172,8 @@ padding-left:5px;
 </style>
 
 <script>
+//$("body").css("background-color", randomColor({luminosity: 'light',alpha: 0.1}));
+
 $(".g").css("color", randomColor({luminosity: 'dark'}));
 $(".a").css("color", randomColor({luminosity: 'dark'}));
 $(".u").css("color", randomColor({luminosity: 'dark'}));
@@ -208,12 +210,12 @@ $(".title").addClass('animated bounceInleft')
 $(".tt").addClass('animated wobble')
 
 $(".techiknow").click(function() {
-  $(".techiknowdiv").addClass('animated bounceInDown')
-  $(".techiknowdiv").removeClass('hidden animated bounceOutDown')
+  $(".techiknowdiv").addClass('animated bounceInUp')
+  $(".techiknowdiv").removeClass('hidden bounceOutDown')
 });
 
 $(".close").click(function() {
-  $(".techiknowdiv").removeClass('animated bounceInDown')
+  $(".techiknowdiv").removeClass('animated bounceInUp')
   $(".techiknowdiv").addClass('animated bounceOutDown')
 });
 
