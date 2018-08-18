@@ -20,31 +20,48 @@ Blogger at <a href="https://www.learnsteps.com">Learnsteps</a> and <a href="http
 <a href="https://instagram.com/gauravchowmean"><i class="fa fa-instagram" style="font-size:28px"></i></a>
 <a href="https://www.learnsteps.com"><i class="fa fa-wordpress" style="font-size:28px"></i></a>
 </div>
+
 </div>
+
 </div>
 <div class="dash">
-<a class="techiknow heading_t hidden" href="#">Technologies I know</a> 
+<a class="techiknow heading_t" href="#">Technologies I know</a> 
 <a href="https://github.com/chowmean?tab=repositories" class="repos heading_t">My crap repositories</a>
 <a href="https://www.learnsteps.com/contacts/" class="write heading_t">Wanna write for learnsteps?</a>
 <a href="mailto:gaurav.dev.iiitm@gamil.com" class="help heading_t"> Need help?</a>
 </div>
 
+<div class="techiknowdiv card col-md-6 hidden">
+<div class="card-header">You can talk to me about:</div>
 
-<div class="techiknowdiv hidden">
-You can talk to me about:
+	
+	<div class="col-md-6">
+		<div class="card">
+	    <div class="card-body">Terraform</div>
+	  	</div>
+	</div>
 
-Terraform
-Chef
-Python
-Django
-Flask
-Mesos Marathon
-Kubernetes
-Linux
-Aws
-Azure
+	<div class="col-md-6">
+		<div class="card">
+	    <div class="card-body">Chef</div>
+	  	</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="card">
+	    <div class="card-body">Python</div>
+	  	</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="card">
+	    <div class="card-body">Linux</div>
+	  	</div>
+	</div>
 
 </div>
+
+
 
 <style>
 .fa{
@@ -75,17 +92,36 @@ body{
 	padding:10px;
 	font-size:16px;
 }
+
 .techiknow{
 
 }
+
 .repos{
 
 }
+
 .write{
 
 }
+
 .help{
 
+}
+
+.techiknowdiv{
+position:absolute;
+top:10%;
+right:2%;
+padding-left:5px;
+	font-size:18px;
+}
+
+.card{
+	border:1px solid grey;
+	border-radius: 4px;
+	padding:10px;
+	margin:10px;
 }
 </style>
 
@@ -114,4 +150,9 @@ $(".name").addClass('animated bounceInDown')
 $(".dash").addClass('animated bounceInUp')
 $(".title").addClass('animated bounceInleft')
 $(".tt").addClass('animated wobble')
+
+$(".techiknow").click(function() {
+  $(".techiknowdiv").removeClass('hidden')
+  $(".techiknowdiv").addClass('animated bounceInDown')
+});
 </script>
