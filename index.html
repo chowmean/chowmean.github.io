@@ -26,11 +26,34 @@ Created <a href="https://getwebsiteip.net">Get Website Ip</a><br>
 
 </div>
 <div class="dash">
+<a class="tuts heading_t" href="#">Tutorials</a> 
 <a class="techiknow heading_t" href="#">Technologies I know</a> 
 <a href="https://github.com/chowmean?tab=repositories" class="repos heading_t">Repositories</a>
 <a href="https://www.learnsteps.com/contacts/" class="write heading_t">Write for learnsteps?</a>
 <a href="mailto:gaurav.dev.iiitm@gamil.com" class="help heading_t"> Need help?</a>
 </div>
+
+<div class="tuts_content  col-md-6 col-md-offset-6 hidden" style="padding-top:100px;">
+		<div class="card-header">Tutorials:</div>
+		
+			
+			<div class="col-md-6 ">
+				<div class="card terra">
+				<div class="card-body"><a href="/python_tutorials_for_devops">Python Tutorials For Devops</a>
+				 </div>
+				  </div>
+			</div>
+		
+		
+			<div class="col-md-3 close">
+				<div class="card">
+				<div class="card-body">Close</div>
+				  </div>
+			</div>
+		
+		</div>
+
+
 
 <div class="techiknowdiv  col-md-6 hidden">
 <div class="card-header">You can talk to me about:</div>
@@ -213,6 +236,11 @@ $(".tt").addClass('animated wobble')
 $(".techiknow").click(function() {
   $(".techiknowdiv").addClass('animated bounceInUp')
   $(".techiknowdiv").removeClass('hidden bounceOutDown')
+});
+
+$(".tuts").click(function() {
+  $(".tuts_content").addClass('animated bounceInUp')
+  $(".tuts_content").removeClass('hidden bounceOutDown')
 });
 
 $(".close").click(function() {
