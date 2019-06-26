@@ -36,7 +36,7 @@
     
     
       
-        <title>Memory Management - Python Training for Devops.</title>
+        <title>Creating a CLI application - Python Training for Devops.</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#memory-management" tabindex="1" class="md-skip">
+      <a href="#introduction" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Memory Management
+                Creating a CLI application
               
             </span>
           
@@ -192,49 +192,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Memory Management
-      </label>
-    
-    <a href="./" title="Memory Management" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../mem/" title="Memory Management" class="md-nav__link">
       Memory Management
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#garbage-collection" title="Garbage Collection" class="md-nav__link">
-    Garbage Collection
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -278,11 +240,85 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../cliapp/" title="Creating a CLI application" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Creating a CLI application
+      </label>
+    
+    <a href="./" title="Creating a CLI application" class="md-nav__link md-nav__link--active">
       Creating a CLI application
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-need-to-start-this" title="What you need to start this?" class="md-nav__link">
+    What you need to start this?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#click-package" title="Click package" class="md-nav__link">
+    Click package
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lets-code" title="Lets code" class="md-nav__link">
+    Lets code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#taking-arguement-in-cli" title="Taking arguement in CLI" class="md-nav__link">
+    Taking arguement in CLI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -300,16 +336,54 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#garbage-collection" title="Garbage Collection" class="md-nav__link">
-    Garbage Collection
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-need-to-start-this" title="What you need to start this?" class="md-nav__link">
+    What you need to start this?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#click-package" title="Click package" class="md-nav__link">
+    Click package
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lets-code" title="Lets code" class="md-nav__link">
+    Lets code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#taking-arguement-in-cli" title="Taking arguement in CLI" class="md-nav__link">
+    Taking arguement in CLI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -330,14 +404,62 @@
               
                 
                 
-                <h1 id="memory-management">Memory Management</h1>
-<p>This concept deals with the way python manages memory, how it assigns memory, how it cleans memory and garbage collect. </p>
-<p>An OS-specific virtual memory manager carves out a chunk of memory for the Python process.</p>
-<p>Python uses a portion of the memory for internal use and non-object memory. The other portion is dedicated to object storage (your int, dict, and the like).</p>
-<h2 id="garbage-collection">Garbage Collection</h2>
-<p>Python interpretor keeps the reference count of all the variables, if reference count of any variable becomes 0. That variable is garbage collected.</p>
-<p>If you want to read more about it read here
-<a href="https://realpython.com/python-memory-management/">memory management in python</a></p>
+                  <h1>Creating a CLI application</h1>
+                
+                <h2 id="introduction">Introduction</h2>
+<p>In this part we will be creating a cli application using a well known framework called Click. </p>
+<h2 id="what-you-need-to-start-this">What you need to start this?</h2>
+<p>Basic knowledge of python syntax loops, how to use packages and how to run python program. Knowledge of cli app will be a good addition. </p>
+<h3 id="click-package">Click package</h3>
+<p>Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It’s the “Command Line Interface Creation Kit”. It’s highly configurable but comes with sensible defaults out of the box.</p>
+<h3 id="lets-code">Lets code</h3>
+<p>Create a directory for your project. Then create a requirements.txt file in your directory. After that initialize an empty env for you python project and then run pip install to install the required packages. Here package will be click so put click in your requirements file. All of this is below</p>
+<pre>
+mkdir project_name
+cd project_name && touch requirements.txt
+virtualenv venv
+source venv/bin/activate
+echo "click" >> requirements.txt
+pip install -r requirements.txt
+</pre>
+
+<p>Our project directory is ready create a file with any name and start writing the code below.</p>
+<p>Here we will be creating a very basic cli app which says hello. </p>
+<pre>
+import click
+
+@click.command()
+
+def hello():
+    """Simple program that greets NAME for a total of COUNT times."""
+    click.echo('Hello')
+
+if __name__ == '__main__':
+    hello()
+
+</pre>
+
+<p>Run this using python filename.py and you will see hello as output. </p>
+<h4 id="taking-arguement-in-cli">Taking arguement in CLI</h4>
+<p>For taking arguement click provide a very easy options. Have a look at code below</p>
+<pre>
+import click
+
+@click.command()
+@click.option('--name', prompt='Your name',
+              help='The person to greet.')
+def hello( name):
+    for x in range():
+        click.echo('Hello %s!' % name)
+
+if __name__ == '__main__':
+    hello()
+</pre>
+
+<p>Here you can take your name as CLI arguement and then this program will print hello your_name. Run this command to run it.</p>
+<pre>
+python filename.py youname
+</pre>
                 
                   
                 
@@ -358,7 +480,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../syntax/" title="Python Syntax" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../tooling/" title="Basic Tooling for Python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -367,25 +489,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Python Syntax
+                Basic Tooling for Python
               </span>
             </div>
           </a>
         
-        
-          <a href="../gil/" title="Global Interpreter Lock" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Global Interpreter Lock
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

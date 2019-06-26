@@ -255,6 +255,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#loops" title="Loops" class="md-nav__link">
+    Loops
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for" title="For" class="md-nav__link">
+    For
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while" title="While" class="md-nav__link">
+    While
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-through-objects" title="Loop through objects" class="md-nav__link">
+    Loop through objects
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" title="Functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-arguements-in-functions" title="Default arguements in functions" class="md-nav__link">
+    Default arguements in functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -310,6 +364,18 @@
   <li class="md-nav__item">
     <a href="../tooling/" title="Basic Tooling for Python" class="md-nav__link">
       Basic Tooling for Python
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cliapp/" title="Creating a CLI application" class="md-nav__link">
+      Creating a CLI application
     </a>
   </li>
 
@@ -381,6 +447,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#loops" title="Loops" class="md-nav__link">
+    Loops
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for" title="For" class="md-nav__link">
+    For
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while" title="While" class="md-nav__link">
+    While
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-through-objects" title="Loop through objects" class="md-nav__link">
+    Loop through objects
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" title="Functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-arguements-in-functions" title="Default arguements in functions" class="md-nav__link">
+    Default arguements in functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -436,6 +556,53 @@ while i<=20:    #block start
 <li>Begin a variable name with an underscore(_) character for a special case.</li>
 </ul>
 <p>Since python in not static typed language you do not need to define the type of variables. </p>
+<h2 id="loops">Loops</h2>
+<h3 id="for">For</h3>
+<pre>
+i=0
+for i < 10:
+    print(i)
+    i++
+</pre>
+
+<h3 id="while">While</h3>
+<pre>
+i=0
+while i<10:
+    print(i)
+    i++
+</pre>
+
+<h3 id="loop-through-objects">Loop through objects</h3>
+<pre>
+a = [1,2,3,4,5,6,7]
+for i in a:
+    print(i)
+</pre>
+
+<pre>
+
+a=[{"name":"qw"},{"name":"qwe"}]
+
+for i in a:
+    print(a["name"])
+</pre>
+
+<h2 id="functions">Functions</h2>
+<pre>
+
+def function_add(var1, var2, var3):
+    do_some_work
+    return var1+var2+var3
+</pre>
+
+<h3 id="default-arguements-in-functions">Default arguements in functions</h3>
+<pre>
+def function_default_arg(var1, var2, var3=10):
+    return var1+var2+var3
+</pre>
+
+<p>Here if no value is specified for var3 it will be 10 by default so you can call it like below. It also shows us a form of polymorphism which we will see later in this tutorial.</p>
                 
                   
                 
