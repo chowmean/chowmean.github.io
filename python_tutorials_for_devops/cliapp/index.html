@@ -276,17 +276,16 @@
     What you need to start this?
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#click-package" title="Click package" class="md-nav__link">
     Click package
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#lets-code" title="Lets code" class="md-nav__link">
     Lets code
   </a>
@@ -295,8 +294,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#taking-arguement-in-cli" title="Taking arguement in CLI" class="md-nav__link">
-    Taking arguement in CLI
+  <a href="#arguments-and-options" title="Arguments and options" class="md-nav__link">
+    Arguments and options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options" title="Options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompts" title="Prompts" class="md-nav__link">
+    Prompts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-prompts" title="Input prompts." class="md-nav__link">
+    Input prompts.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confirmation-prompts" title="Confirmation prompts." class="md-nav__link">
+    Confirmation prompts.
   </a>
   
 </li>
@@ -308,6 +342,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#click-application-to-pull-repos" title="Click application to pull repos" class="md-nav__link">
+    Click application to pull repos
+  </a>
   
 </li>
       
@@ -352,17 +393,16 @@
     What you need to start this?
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#click-package" title="Click package" class="md-nav__link">
     Click package
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#lets-code" title="Lets code" class="md-nav__link">
     Lets code
   </a>
@@ -371,8 +411,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#taking-arguement-in-cli" title="Taking arguement in CLI" class="md-nav__link">
-    Taking arguement in CLI
+  <a href="#arguments-and-options" title="Arguments and options" class="md-nav__link">
+    Arguments and options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options" title="Options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompts" title="Prompts" class="md-nav__link">
+    Prompts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-prompts" title="Input prompts." class="md-nav__link">
+    Input prompts.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confirmation-prompts" title="Confirmation prompts." class="md-nav__link">
+    Confirmation prompts.
   </a>
   
 </li>
@@ -384,6 +459,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#click-application-to-pull-repos" title="Click application to pull repos" class="md-nav__link">
+    Click application to pull repos
+  </a>
   
 </li>
       
@@ -410,9 +492,26 @@
 <p>In this part we will be creating a cli application using a well known framework called Click. </p>
 <h2 id="what-you-need-to-start-this">What you need to start this?</h2>
 <p>Basic knowledge of python syntax loops, how to use packages and how to run python program. Knowledge of cli app will be a good addition. </p>
-<h3 id="click-package">Click package</h3>
+<h2 id="click-package">Click package</h2>
 <p>Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It’s the “Command Line Interface Creation Kit”. It’s highly configurable but comes with sensible defaults out of the box.</p>
-<h3 id="lets-code">Lets code</h3>
+<p>Click adds functionality like help by default which is very useful in case of cli apps. Functionality like below</p>
+<pre>
+(venv) $chowmean@chowmean-MACH-WX9:$ python hello_click.py help
+Usage: hello_click.py [OPTIONS]
+Try "hello_click.py --help" for help.
+
+Error: Got unexpected extra argument (help)
+(venv) $chowmean@chowmean-MACH-WX9:$ python hello_click.py --help
+Usage: hello_click.py [OPTIONS]
+
+  Simple program that greets NAME for a total of COUNT times.
+
+Options:
+  --help  Show this message and exit.
+(venv) $chowmean@chowmean-MACH-WX9:$ 
+</pre>
+
+<h2 id="lets-code">Lets code</h2>
 <p>Create a directory for your project. Then create a requirements.txt file in your directory. After that initialize an empty env for you python project and then run pip install to install the required packages. Here package will be click so put click in your requirements file. All of this is below</p>
 <pre>
 mkdir project_name
@@ -440,8 +539,13 @@ if __name__ == '__main__':
 </pre>
 
 <p>Run this using python filename.py and you will see hello as output. </p>
-<h4 id="taking-arguement-in-cli">Taking arguement in CLI</h4>
-<p>For taking arguement click provide a very easy options. Have a look at code below</p>
+<h3 id="arguments-and-options">Arguments and options</h3>
+<p>Lets first distinguish between these two. </p>
+<p><em>Options</em> are the values that you can provide to your program through CLI. </p>
+<p><em>Arguments</em>  work similarly to options but are positional. They also only support a subset of the features of options due to their syntactical nature. </p>
+<p>Arguements cannot do anything more than options so we will have a look at options in detail</p>
+<h4 id="options">Options</h4>
+<p>For taking options click provide a very easy options. Have a look at code below</p>
 <pre>
 import click
 
@@ -460,6 +564,87 @@ if __name__ == '__main__':
 <pre>
 python filename.py youname
 </pre>
+
+<p>Now you can divide options in two type required and optional ones. 
+For that you only have to pass <em>required=True</em> and that option will be mandatory</p>
+<pre>
+import click
+
+@click.command()
+@click.option('--name', prompt='Your name',
+              help='The person to greet.', required=True)
+def hello( name):
+    for x in range():
+        click.echo('Hello %s!' % name)
+
+if __name__ == '__main__':
+    hello()
+</pre>
+
+<p>In above code now name is a mandatory option. </p>
+<h3 id="prompts">Prompts</h3>
+<p>Prompts are a way to take user in input at the run time. These are useful when you want to enter some password and don't want it to be recorded in history command. </p>
+<p>There are two types of prompts here. </p>
+<h4 id="input-prompts">Input prompts.</h4>
+<p>Input prompts are used for taking inputs from users. Look at the example below
+<pre>
+value = click.prompt('Please enter your nanme', type=string)
+</pre></p>
+<h4 id="confirmation-prompts">Confirmation prompts.</h4>
+<p>Confirmation prompts are for confirming if you want to continue. </p>
+<pre>
+if click.confirm('Do you want to continue?'):
+    click.echo('Well done!')
+</pre>
+
+<p>You can give option <code>abort=True</code>. If you want to abort on not confirming. </p>
+<h2 id="click-application-to-pull-repos">Click application to pull repos</h2>
+<p>Here we will build a very small application to get all the public github repos of any users. </p>
+<p>Lets first plan how we will do this. So there will be only two steps. One where we ask for the username of the user to search repos for and next is getting the repo and printing it. </p>
+<p>For first part we will get username like below</p>
+<pre>
+import click
+
+@click.command()
+@click.option('--username', prompt='Github username',
+              help='Github username to get repo details.')
+
+def get_projects(username):
+    return username
+
+if __name__ == '__main__':
+    get_projects()
+</pre>
+
+<p>Here we got the input from user to get the username. Now we have to get the details of its repository. </p>
+<p>For that we need to make an api call to open githib apis. For making http calls in python we use a very famous library called requests. </p>
+<p>Look at the code below to understand how requests library works.</p>
+<pre>
+import requests
+a = requests.get("www.google.com")
+print(a.content)
+</pre>
+
+<p>As simple as this. It supports all the options that are there in http calls like headers, methods etc. We will use this library to make a call to github api. </p>
+<p>Look at the code below</p>
+<pre>
+import click
+import requests
+
+@click.command()
+@click.option('--username', prompt='Github username',
+              help='Github username to get repo details.')
+
+def get_projects(username):
+    a = requests.get("https://api.github.com/users/"+username+"/repos")
+    print(a.content)
+
+if __name__ == '__main__':
+    get_projects()
+
+</pre>
+
+<p>You got the list of repository but they have lot more data and they need to be in understood by program as object. Right now they are in json format. For handling json we have a library called json in python</p>
                 
                   
                 
