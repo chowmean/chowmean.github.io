@@ -1,0 +1,1001 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Decorators - Python Training for Devops.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#decorators" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Python Training for Devops." class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Python Training for Devops.
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Decorators
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Python Training for Devops." class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Python Training for Devops.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../syntax/" title="Python Syntax" class="md-nav__link">
+      Python Syntax
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../mem/" title="Memory Management" class="md-nav__link">
+      Memory Management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gil/" title="Global Interpreter Lock" class="md-nav__link">
+      Global Interpreter Lock
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../oops/" title="Object Oriented Programming" class="md-nav__link">
+      Object Oriented Programming
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tooling/" title="Basic Tooling for Python" class="md-nav__link">
+      Basic Tooling for Python
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../best_practices/" title="Best Practices for programming and python" class="md-nav__link">
+      Best Practices for programming and python
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cliapp/" title="Creating a CLI application" class="md-nav__link">
+      Creating a CLI application
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../logging/" title="Logging in application" class="md-nav__link">
+      Logging in application
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Decorators
+      </label>
+    
+    <a href="./" title="Decorators" class="md-nav__link md-nav__link--active">
+      Decorators
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-class-objects" title="First-Class Objects" class="md-nav__link">
+    First-Class Objects
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1" title="Example 1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inner-functions" title="Inner Functions:" class="md-nav__link">
+    Inner Functions:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#returning-functions-from-functions" title="Returning Functions From Functions:" class="md-nav__link">
+    Returning Functions From Functions:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-decorators" title="Simple Decorators:" class="md-nav__link">
+    Simple Decorators:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#put-simply-decorators-wrap-a-function-modifying-its-behavior" title="Put simply: decorators wrap a function, modifying its behavior." class="md-nav__link">
+    Put simply: decorators wrap a function, modifying its behavior.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" title="Example:" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syntactic-sugar" title="Syntactic Sugar!" class="md-nav__link">
+    Syntactic Sugar!
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" title="Example:" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reusing-decorators" title="Reusing Decorators:" class="md-nav__link">
+    Reusing Decorators:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorating-functions-with-arguments" title="Decorating Functions With Arguments:" class="md-nav__link">
+    Decorating Functions With Arguments:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returning-values-from-decorated-functions" title="Returning Values From Decorated Functions:" class="md-nav__link">
+    Returning Values From Decorated Functions:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-world-use-cases" title="Real world use cases:" class="md-nav__link">
+    Real world use cases:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples:" class="md-nav__link">
+    Examples:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../internals/" title="Python internals" class="md-nav__link">
+      Python internals
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../flask/" title="Flask" class="md-nav__link">
+      Flask
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../flaskdb/" title="Python With Mysql" class="md-nav__link">
+      Python With Mysql
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../flaskandorm/" title="Flask and ORM" class="md-nav__link">
+      Flask and ORM
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../metrics/" title="Exposing metrics with python" class="md-nav__link">
+      Exposing metrics with python
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-class-objects" title="First-Class Objects" class="md-nav__link">
+    First-Class Objects
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1" title="Example 1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inner-functions" title="Inner Functions:" class="md-nav__link">
+    Inner Functions:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#returning-functions-from-functions" title="Returning Functions From Functions:" class="md-nav__link">
+    Returning Functions From Functions:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-decorators" title="Simple Decorators:" class="md-nav__link">
+    Simple Decorators:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#put-simply-decorators-wrap-a-function-modifying-its-behavior" title="Put simply: decorators wrap a function, modifying its behavior." class="md-nav__link">
+    Put simply: decorators wrap a function, modifying its behavior.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" title="Example:" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syntactic-sugar" title="Syntactic Sugar!" class="md-nav__link">
+    Syntactic Sugar!
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" title="Example:" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reusing-decorators" title="Reusing Decorators:" class="md-nav__link">
+    Reusing Decorators:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorating-functions-with-arguments" title="Decorating Functions With Arguments:" class="md-nav__link">
+    Decorating Functions With Arguments:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returning-values-from-decorated-functions" title="Returning Values From Decorated Functions:" class="md-nav__link">
+    Returning Values From Decorated Functions:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-world-use-cases" title="Real world use cases:" class="md-nav__link">
+    Real world use cases:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples:" class="md-nav__link">
+    Examples:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="decorators">Decorators</h1>
+<h3 id="first-class-objects">First-Class Objects</h3>
+<p>First class objects in a language are handled uniformly throughout.</p>
+<p>These are the some properties of first class objects</p>
+<ol>
+<li>To be named by variables.</li>
+<li>To be passed as arguments to procedures.</li>
+<li>To be returned as values of procedures.</li>
+<li>To be incorporated into data structures</li>
+</ol>
+<p>In Python, functions are first-class objects. This means that functions can be passed around and used as arguments, just like any other object (string, int, float, list, and so on). Consider the following three functions:</p>
+<h5 id="example-1">Example 1</h5>
+<p><pre>
+def say_hello(name):
+    return "Hello %s"% name
+def be_awesome(name):
+    return "Yo %s"% name
+def greet_bob(greeter_func):
+    return greeter_func("Bob")
+</pre></p>
+<p>Here, say_hello() and be_awesome() are regular functions that expect a name given as a string. The greet_bob() function however, expects a function as its argument. We can, for instance, pass it the say_hello() or the be_awesome() function:.</p>
+<p>We can execute in python shell</p>
+<pre>
+>>> greet_bob(say_hello)
+'Hello Bob'
+>>> greet_bob(be_awesome)
+'Yo Bob'
+</pre>
+
+<h3 id="inner-functions">Inner Functions:</h3>
+<p>It’s possible to define functions inside other functions. Such functions are called inner functions. Here’s an example of a function with two inner functions:
+<pre>
+def parent():
+    print("Printing from the parent() function")
+    def first_child():
+        print("Printing from the first_child() function")
+    def second_child():
+        print("Printing from the second_child() function")
+    second_child()
+    first_child()
+</pre></p>
+<p>what happens when you call parent function?</p>
+<pre>
+>>> parent()
+Printing from the parent() function
+Printing from the second_child() function
+Printing from the first_child() function
+</pre>
+
+<p>Note that the order in which the inner functions are defined does not matter. Like with any other functions, the printing only happens when the inner functions are executed.</p>
+<p>Furthermore, the inner functions are not defined until the parent function is called. They are locally scoped to parent(): they only exist inside the parent() function as local variables. Try calling first_child(). You should get an error:</p>
+<pre>
+>>>first_child()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'first_child' is not defined
+</pre>
+
+<p>Whenever you call parent(), the inner functions first_child() and second_child() are also called. But because of their local scope, they aren’t available outside of the parent() function.</p>
+<h3 id="returning-functions-from-functions">Returning Functions From Functions:</h3>
+<p>Python also allows you to use functions as return values. The following example returns one of the inner functions from the outer parent() function:
+<pre>
+def parent(num):
+    def first_child():
+        return "Hi, I am Emma"
+    def second_child():
+        return "Call me Liam"
+    if num == 1:
+        return first_child
+    else:
+        return second_child
+</pre></p>
+<p>Note that you are returning first_child without the parentheses. Recall that this means that you are returning a reference to the function first_child. In contrast first_child() with parentheses refers to the result of evaluating the function. This can be seen in the following example:</p>
+<pre>
+>>> first = parent(1)
+>>> second = parent(2)
+
+>>> first
+<function parent.<locals>.first_child at 0x7f599f1e2e18>'
+
+>>> second
+<function parent.<locals>.second_child at 0x7f599dad5268>
+</pre>
+
+<p>You can now use first and second as if they are regular functions, even though the functions they point to can’t be accessed directly:</p>
+<pre>
+>>> first()
+'Hi, I am Emma'
+
+>>> second()
+'Call me Liam'
+</pre>
+
+<h2 id="simple-decorators">Simple Decorators:</h2>
+<p>Now that you’ve seen that functions are just like any other object in Python, you’re ready to move on and see the magical beast that is the Python decorator. Let’s start with an example</p>
+<p>Example:
+<pre>
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+def say_whee():
+    print("Whee!")
+say_whee = my_decorator(say_whee)
+</pre></p>
+<p>Can you guess what happens when you call say_whee()? Try it:</p>
+<pre>
+>>> say_whee()
+Something is happening before the function is called.
+Whee!
+Something is happening after the function is called.
+</pre>
+
+<p>To understand what’s going on here, look back at the previous examples. We are literally just applying everything you have learned so far.</p>
+<p>The so-called decoration happens at the following line:
+<pre>
+say_whee = my_decorator(say_whee)
+</pre></p>
+<p>In effect, the name say_whee now points to the wrapper() inner function. Remember that you return wrapper as a function when you call my_decorator(say_whee):</p>
+<pre>
+>>> say_whee
+<function my_decorator.<locals>.wrapper at 0x7f3c5dfd42f0>
+</pre>
+
+<p>However, wrapper() has a reference to the original say_whee() as func, and calls that function between the two calls to print().</p>
+<h5 id="put-simply-decorators-wrap-a-function-modifying-its-behavior">Put simply: decorators wrap a function, modifying its behavior.</h5>
+<h5 id="example">Example:</h5>
+<p><pre>
+from datetime import datetime
+def not_during_the_night(func):
+    def wrapper():
+        if 7 &lt;= datetime.now().hour &lt; 22:
+            func()
+        else:
+            pass  # Hush, the neighbors are asleep
+    return wrapper
+def say_whee():
+    print("Whee!")
+say_whee = not_during_the_night(say_whee)
+</pre></p>
+<p>If you try to call say_whee() after bedtime, nothing will happen:</p>
+<pre>
+>>> say_whee()
+</pre>
+
+<h3 id="syntactic-sugar">Syntactic Sugar!</h3>
+<p>The way you decorated say_whee() above is a little heavy. First of all, you end up typing the name say_whee three times.</p>
+<p>Python allows you to use decorators in a simpler way with the @ symbol, sometimes called the “pie” syntax. The following example does the exact same thing as the first decorator example:</p>
+<h4 id="example_1">Example:</h4>
+<p><pre>
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper</p>
+<p>@my_decorator
+def say_whee():
+    print("Whee!")
+</pre></p>
+<h3 id="reusing-decorators">Reusing Decorators:</h3>
+<p>Recall that a decorator is just a regular Python function. All the usual tools for easy reusability are available. Let’s move the decorator to its own module that can be used in many other functions.</p>
+<pre>
+def do_twice(func):
+    def wrapper_do_twice():
+        func()
+        func()
+    return wrapper_do_twice
+@do_twice
+def say_whee():
+    print("Whee!")
+</pre>
+
+<h3 id="decorating-functions-with-arguments">Decorating Functions With Arguments:</h3>
+<p>Say that you have a function that accepts some arguments. Can you still decorate it? Let’s try:</p>
+<p>Example:
+<pre>
+def do_twice(func):
+    def wrapper_do_twice():
+        func()
+        func()
+    return wrapper_do_twice</p>
+<p>@do_twice
+def greet(name):
+    print " hello %s"%name</p>
+<p>def say_whee():
+    print "Whee!"
+</pre></p>
+<p>Unfortunately, running this code raises an error:</p>
+<pre>
+>>> greet("World")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: wrapper_do_twice() takes 0 positional arguments but 1 was given
+</pre>
+
+<p>The problem is that the inner function wrapper_do_twice() does not take any arguments, but name="World" was passed to it. You could fix this by letting wrapper_do_twice() accept one argument, but then it would not work for the say_whee() function you created earlier.</p>
+<p>The solution is to use <em>args and </em>*kwargs in the inner wrapper function. Then it will accept an arbitrary number of positional and keyword arguments. Rewrite decorators.py as follows:</p>
+<pre>
+def do_twice(func):
+    def wrapper_do_twice(*args, **kwargs):
+        func(*args, **kwargs)
+        func(*args, **kwargs)
+    return wrapper_do_twice
+@do_twice
+def greet(name):
+    print " hello %s"%name
+def say_whee():
+    print "Whee!"
+</pre>
+
+<p>Now call functions </p>
+<pre>
+>>> say_whee()
+Whee!
+Whee!
+>>> greet("World")
+Hello World
+Hello World
+</pre>
+
+<h3 id="returning-values-from-decorated-functions">Returning Values From Decorated Functions:</h3>
+<p>What happens to the return value of decorated functions? Well, that’s up to the decorator to decide. Let’s say you decorate a simple function as follows:
+<pre>
+def do_twice(func):
+    def wrapper_do_twice(<em>args, <strong>kwargs):
+        func(*args, </strong>kwargs)
+        func(</em>args, **kwargs)
+    return wrapper_do_twice</p>
+<p>@do_twice
+def return_greeting(name):
+    print("Creating greeting")
+    return "Hi %s"%name
+</pre></p>
+<p>Call function</p>
+<pre>
+>>> hi_adam = return_greeting("Adam")
+Creating greeting
+Creating greeting
+>>> print(hi_adam)
+None
+</pre>
+
+<p>Oops, your decorator ate the return value from the function.
+modify your wrapper to return something </p>
+<pre>
+def do_twice(func):
+    def wrapper_do_twice(*args, **kwargs):
+        func(*args, **kwargs)
+        return func(*args, **kwargs)
+    return wrapper_do_twice
+</pre>
+
+<h3 id="real-world-use-cases">Real world use cases:</h3>
+<ol>
+<li>Timing functions</li>
+<li>Registering functions</li>
+<li>checking for authentication</li>
+</ol>
+<h3 id="examples">Examples:</h3>
+<p><pre>
+from flask import Flask, g, request, redirect, url_for
+import functools
+app = Flask(<strong>name</strong>)</p>
+<p>def login_required(func):
+    """Make sure user is logged in before proceeding"""
+    @functools.wraps(func)
+    def wrapper_login_required(*args, <strong>kwargs):
+        if g.user is None:
+            return redirect(url_for("login", next=request.url))
+        return func(*args, </strong>kwargs)
+    return wrapper_login_required</p>
+<p>@app.route("/secret")
+@login_required
+def secret():
+    ...
+</pre></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../logging/" title="Logging in application" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Logging in application
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../internals/" title="Python internals" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Python internals
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

@@ -36,7 +36,7 @@
     
     
       
-        <title>Python Syntax - Python Training for Devops.</title>
+        <title>Python internals - Python Training for Devops.</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#about-python" tabindex="1" class="md-skip">
+      <a href="#python-internals" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Python Syntax
+                Python internals
               
             </span>
           
@@ -180,143 +180,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Python Syntax
-      </label>
-    
-    <a href="./" title="Python Syntax" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../syntax/" title="Python Syntax" class="md-nav__link">
       Python Syntax
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blocks-in-python" title="Blocks in python" class="md-nav__link">
-    Blocks in python
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#why-are-blocks-important" title="Why are Blocks important?" class="md-nav__link">
-    Why are Blocks important?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variables" title="Variables" class="md-nav__link">
-    Variables
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#python-variable-name-rules" title="Python Variable Name Rules" class="md-nav__link">
-    Python Variable Name Rules
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#good-variable-name" title="Good Variable Name" class="md-nav__link">
-    Good Variable Name
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loops" title="Loops" class="md-nav__link">
-    Loops
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#for" title="For" class="md-nav__link">
-    For
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#while" title="While" class="md-nav__link">
-    While
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loop-through-objects" title="Loop through objects" class="md-nav__link">
-    Loop through objects
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#functions" title="Functions" class="md-nav__link">
-    Functions
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#default-arguements-in-functions" title="Default arguements in functions" class="md-nav__link">
-    Default arguements in functions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -420,11 +288,124 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../internals/" title="Python internals" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Python internals
+      </label>
+    
+    <a href="./" title="Python internals" class="md-nav__link md-nav__link--active">
       Python internals
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#compiler" title="Compiler:" class="md-nav__link">
+    Compiler:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpreter" title="Interpreter" class="md-nav__link">
+    Interpreter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-python-runs" title="How Python runs?" class="md-nav__link">
+    How Python runs?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-interpreter" title="The interpreter" class="md-nav__link">
+    The interpreter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programmers-view-of-interpreter" title="Programmer’s view of interpreter" class="md-nav__link">
+    Programmer’s view of interpreter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pythons-view-of-interpreter" title="Python’s view of interpreter" class="md-nav__link">
+    Python’s view of interpreter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-virtual-machine-do" title="What does Virtual Machine do?" class="md-nav__link">
+    What does Virtual Machine do?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lastly-here-are-a-interesting-points" title="Lastly, here are a interesting points:" class="md-nav__link">
+    Lastly, here are a interesting points:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-compiled-files" title="see compiled files:" class="md-nav__link">
+    see compiled files:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question" title="Question:" class="md-nav__link">
+    Question:
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -497,16 +478,44 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#blocks-in-python" title="Blocks in python" class="md-nav__link">
-    Blocks in python
+  <a href="#compiler" title="Compiler:" class="md-nav__link">
+    Compiler:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpreter" title="Interpreter" class="md-nav__link">
+    Interpreter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-python-runs" title="How Python runs?" class="md-nav__link">
+    How Python runs?
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#why-are-blocks-important" title="Why are Blocks important?" class="md-nav__link">
-    Why are Blocks important?
+  <a href="#the-interpreter" title="The interpreter" class="md-nav__link">
+    The interpreter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programmers-view-of-interpreter" title="Programmer’s view of interpreter" class="md-nav__link">
+    Programmer’s view of interpreter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pythons-view-of-interpreter" title="Python’s view of interpreter" class="md-nav__link">
+    Python’s view of interpreter
   </a>
   
 </li>
@@ -517,23 +526,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#variables" title="Variables" class="md-nav__link">
-    Variables
+  <a href="#what-does-virtual-machine-do" title="What does Virtual Machine do?" class="md-nav__link">
+    What does Virtual Machine do?
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#python-variable-name-rules" title="Python Variable Name Rules" class="md-nav__link">
-    Python Variable Name Rules
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#good-variable-name" title="Good Variable Name" class="md-nav__link">
-    Good Variable Name
+  <a href="#lastly-here-are-a-interesting-points" title="Lastly, here are a interesting points:" class="md-nav__link">
+    Lastly, here are a interesting points:
   </a>
   
 </li>
@@ -544,56 +546,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loops" title="Loops" class="md-nav__link">
-    Loops
+  <a href="#see-compiled-files" title="see compiled files:" class="md-nav__link">
+    see compiled files:
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#for" title="For" class="md-nav__link">
-    For
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#while" title="While" class="md-nav__link">
-    While
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loop-through-objects" title="Loop through objects" class="md-nav__link">
-    Loop through objects
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#functions" title="Functions" class="md-nav__link">
-    Functions
+  <a href="#question" title="Question:" class="md-nav__link">
+    Question:
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#default-arguements-in-functions" title="Default arguements in functions" class="md-nav__link">
-    Default arguements in functions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -614,91 +576,101 @@
               
                 
                 
-                <h1 id="about-python">About python</h1>
-<h2 id="blocks-in-python">Blocks in python</h2>
-<p>While in most of the langauges blocks are defined using brackets like {}, (), [] but in python blocks are defined using spaces that is the piece of code that has the same spaces from the start of line belong to that contiguous block. </p>
-<p>Example: </p>
-<pre>
-for(int i=0;i<=20;i++){ //block start  
-    console.log(i)
-}   //block end
-</pre>
-
-<p>This is javascript example of printing number from one to 20</p>
-<pre>
-i=0
-while i<=20:    #block start
-    print(i)
-                #block end
-</pre>
-
-<p>This is python style of the same. </p>
-<h3 id="why-are-blocks-important">Why are Blocks important?</h3>
-<p>Blocks are important because variables scoping depends a lot on them. Variable defined inside a block will only be accessible from inside the block only.</p>
-<h2 id="variables">Variables</h2>
-<h4 id="python-variable-name-rules">Python Variable Name Rules</h4>
+                <h1 id="python-internals">Python Internals</h1>
+<h4 id="compiler">Compiler:</h4>
+<p>Definition: A compiler is a computer program that transforms (translates) source code of a programming language (the source language) into another computer language (the target language). In most cases compilers are used to transform source code into executable program, i.e. they translate code from high-level programming languages into low (or lower) level languages, mostly assembly or machine code.</p>
+<p>Ex:<br> 
+1. Java<br> 
+2. C++<br>
+3. C#<br></p>
+<h4 id="interpreter">Interpreter</h4>
+<p>Definition: An interpreter is a computer program that executes instructions written in a programming language. Translation occurs at the same time as the program is being executed.
+<br>It can either</p>
+<ol>
+<li>execute the source code directly or</li>
+<li>translate the source code in a first step into a more efficient representation and execute this code</li>
+</ol>
+<p>Ex:<br>
+1. java script<br>
+2. Python</p>
+<h3 id="how-python-runs">How Python runs?</h3>
+<p>Have you ever thought how the Python code is actually executed by the Python interpreter? What steps are carried out to generate the final output of your Python script? This article answers all these questions in a simplistic manner!
+<br></p>
+<p><img alt="Interprer Interpreter" src="https://i.imgur.com/iQYveIP.png" /></p>
+<h4 id="the-interpreter">The interpreter</h4>
+<p>Interpreter is nothing but a software which can run your Python scripts.</p>
+<p>Interestingly, it can be implemented in any programming language!</p>
+<ol>
+<li>CPython is the default interpreter for Python which is written in C programming language.</li>
+<li>Jython is another popular implementation of python interpreter written using Java programming language.</li>
+</ol>
+<h4 id="programmers-view-of-interpreter">Programmer’s view of interpreter</h4>
+<p>If you have been coding in Python for sometime, you must have heard about the interpreter  at least a few times.<br> 
+From a programmer’s perspective, an interpreter is simply a software which executes the source code line by line.</p>
+<p><img alt="Interprer Interpreter" src="https://i.imgur.com/c0PRvvI.png" /></p>
+<p><br>For most of the Python programmers, an interpreter is like a black box.<br></p>
+<h4 id="pythons-view-of-interpreter">Python’s view of interpreter</h4>
+<p>Now, let us scan through the python interpreter and try to understand how it works.</p>
+<p>Have a look at the diagram shown below:
+<img alt="Interprer Interpreter" src="https://i.imgur.com/PJME67T.png" /></p>
+<p>I hope you didn’t get amazed to see a compiler inside an interpreter!</p>
+<p>From the figure above, it can be inferred that interpreter is made up of two parts:</p>
+<ol>
+<li>compiler</li>
+<li>virtual machine<br></li>
+</ol>
+<p>What does compiler do?</p>
+<p>Compiler compiles your source code (the statements in your file) into a format known as byte code. Compilation is simply a translation step!<br></p>
+<p>Byte code is a:</p>
+<ol>
+<li>lower level,</li>
+<li>platform independent,</li>
+<li>efficient and</li>
+<li>intermediate<br>
+representation of your source code!</li>
+</ol>
+<p>Roughly, each of your source statements is translated into a group of byte code instructions.</p>
+<p>The process of compilation in CPython interpreter’s compiler can be divided into 4 main parts:</p>
 <ul>
-<li>Must begin with a letter (a - z, A - B) or underscore (_)</li>
-<li>Other characters can be letters, numbers or _</li>
-<li>Case Sensitive</li>
-<li>Can be any (reasonable) length</li>
-<li>There are some reserved words which you cannot use as a variable name because Python uses them for other things.</li>
+<li>
+<p><strong>Parse source code into a parse tree:</strong><br>
+  Based on grammar rules of Python programming language, the source code is converted to a parse tree. Every node of the parse tree contains a part of your code.<br></p>
+<p>Consider a simple arithmetic expression:
+<pre>
+14 + 2 * 3 - 6 / 2
+</pre>
+The parse tree for above expression looks like this:
+<img alt="Interprer Interpreter" src="https://indianpythonista.files.wordpress.com/2018/01/parsetree.png" /></p>
+</li>
+<li>
+<p><strong>Transform parse tree into an Abstract Syntax Tree:</strong><br>
+   The abstract syntax tree (AST) is a high-level representation of the program structure.
+    Each node of the tree denotes a construct occurring in the source code. The syntax is “abstract” in not representing every detail appearing in the real syntax.Consider the AST shown below for the parse tree example discussed above:
+    <img alt="Interprer Interpreter" src="https://indianpythonista.files.wordpress.com/2018/01/ast.png" /></p>
+</li>
+<li><strong>Transform AST into a Control Flow Graph:</strong><br>
+    A control flow graph is a directed graph that models the flow of a program using basic blocks. Each block contains the bytecode representation of program code inside it.</li>
+<li><strong>Byte Code generation from CFG:</strong><br>
+    CFGs are usually one step away from final code output. Code is directly generated from the basic blocks by doing a post-order depth-first search on the CFG following the edges.</li>
 </ul>
-<h4 id="good-variable-name">Good Variable Name</h4>
-<ul>
-<li>Choose meaningful name instead of short name. roll_no is better than rn.</li>
-<li>Maintain the length of a variable name. Roll_no_of_a-student is too long?</li>
-<li>Be consistent; roll_no or RollNo</li>
-<li>Begin a variable name with an underscore(_) character for a special case.</li>
-</ul>
-<p>Since python in not static typed language you do not need to define the type of variables. </p>
-<h2 id="loops">Loops</h2>
-<h3 id="for">For</h3>
-<pre>
-i=0
-for i < 10:
-    print(i)
-    i++
-</pre>
-
-<h3 id="while">While</h3>
-<pre>
-i=0
-while i<10:
-    print(i)
-    i++
-</pre>
-
-<h3 id="loop-through-objects">Loop through objects</h3>
-<pre>
-a = [1,2,3,4,5,6,7]
-for i in a:
-    print(i)
-</pre>
-
-<pre>
-
-a=[{"name":"qw"},{"name":"qwe"}]
-
-for i in a:
-    print(a["name"])
-</pre>
-
-<h2 id="functions">Functions</h2>
-<pre>
-
-def function_add(var1, var2, var3):
-    do_some_work
-    return var1+var2+var3
-</pre>
-
-<h3 id="default-arguements-in-functions">Default arguements in functions</h3>
-<pre>
-def function_default_arg(var1, var2, var3=10):
-    return var1+var2+var3
-</pre>
-
-<p>Here if no value is specified for var3 it will be 10 by default so you can call it like below. It also shows us a form of polymorphism which we will see later in this tutorial.</p>
+<p>This byte code translation is performed to speed up the execution—byte code can be run much quicker than the original source code statements.</p>
+<h3 id="what-does-virtual-machine-do">What does Virtual Machine do?</h3>
+<p>As soon as source code gets converted to byte code, it is fed into PVM (Python Virtual Machine).<br>
+It’s just a big loop that iterates through your byte code instructions, one by one, to carry out their operations. <strong>The PVM is the runtime engine of Python</strong>; it’s always present as part of the Python system, and is the component that truly runs your scripts. Technically, it’s just the last step of what is called the Python interpreter. </p>
+<h4 id="lastly-here-are-a-interesting-points">Lastly, here are a interesting points:</h4>
+<ol>
+<li>PyPy is an implementation of Python which does not use an interpreter! It is implemented using something called just-in-time compiler!
+Interestingly, it often runs faster than the standard implementation of Python, CPython.</li>
+<li>Whenever a Python script is executed, the byte code is generated in memory and simply discarded when program exits.</li>
+<li>But, if a Python module is imported, a .pyc file for the module is generated which contains its Byte code.
+Thus, when the module is imported next time, the byte code from .pyc file is used, hence skipping the compilation step!</li>
+</ol>
+<h3 id="see-compiled-files">see compiled files:</h3>
+<p><pre>
+  python -m py_compile hello.py
+</pre> </p>
+<h3 id="question">Question:</h3>
+<p>when we update source code of imported module, how does interpreter picks up that updated code?  </p>
                 
                   
                 
@@ -719,7 +691,7 @@ def function_default_arg(var1, var2, var3=10):
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../decorators/" title="Decorators" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -728,19 +700,19 @@ def function_default_arg(var1, var2, var3=10):
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Decorators
               </span>
             </div>
           </a>
         
         
-          <a href="../mem/" title="Memory Management" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../flask/" title="Flask" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Memory Management
+                Flask
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

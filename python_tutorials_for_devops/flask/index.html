@@ -1,0 +1,999 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Flask - Python Training for Devops.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#flask" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Python Training for Devops." class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Python Training for Devops.
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Flask
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Python Training for Devops." class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Python Training for Devops.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../syntax/" title="Python Syntax" class="md-nav__link">
+      Python Syntax
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../mem/" title="Memory Management" class="md-nav__link">
+      Memory Management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gil/" title="Global Interpreter Lock" class="md-nav__link">
+      Global Interpreter Lock
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../oops/" title="Object Oriented Programming" class="md-nav__link">
+      Object Oriented Programming
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tooling/" title="Basic Tooling for Python" class="md-nav__link">
+      Basic Tooling for Python
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../best_practices/" title="Best Practices for programming and python" class="md-nav__link">
+      Best Practices for programming and python
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cliapp/" title="Creating a CLI application" class="md-nav__link">
+      Creating a CLI application
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../logging/" title="Logging in application" class="md-nav__link">
+      Logging in application
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../decorators/" title="Decorators" class="md-nav__link">
+      Decorators
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../internals/" title="Python internals" class="md-nav__link">
+      Python internals
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Flask
+      </label>
+    
+    <a href="./" title="Flask" class="md-nav__link md-nav__link--active">
+      Flask
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-minimal-application" title="A Minimal Application" class="md-nav__link">
+    A Minimal Application
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#so-what-did-that-code-do" title="So what did that code do?" class="md-nav__link">
+    So what did that code do?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#externally-visible-server" title="Externally Visible Server:" class="md-nav__link">
+    Externally Visible Server:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-when-type-flask-run" title="what happens when type flask run?" class="md-nav__link">
+    what happens when type flask run?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug-mode" title="Debug Mode:" class="md-nav__link">
+    Debug Mode:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-rules" title="Variable Rules:" class="md-nav__link">
+    Variable Rules:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unique-urls-redirection-behavior" title="Unique URLs / Redirection Behavior" class="md-nav__link">
+    Unique URLs / Redirection Behavior
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-templates" title="Rendering Templates" class="md-nav__link">
+    Rendering Templates
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example1" title="Example1:" class="md-nav__link">
+    Example1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example2" title="Example2:" class="md-nav__link">
+    Example2:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redirects" title="Redirects:" class="md-nav__link">
+    Redirects:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors" title="Errors:" class="md-nav__link">
+    Errors:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apis-with-json" title="APIs with JSON:" class="md-nav__link">
+    APIs with JSON:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cookies" title="Cookies" class="md-nav__link">
+    Cookies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sessions" title="Sessions:" class="md-nav__link">
+    Sessions:
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../flaskdb/" title="Python With Mysql" class="md-nav__link">
+      Python With Mysql
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../flaskandorm/" title="Flask and ORM" class="md-nav__link">
+      Flask and ORM
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../metrics/" title="Exposing metrics with python" class="md-nav__link">
+      Exposing metrics with python
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-minimal-application" title="A Minimal Application" class="md-nav__link">
+    A Minimal Application
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#so-what-did-that-code-do" title="So what did that code do?" class="md-nav__link">
+    So what did that code do?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#externally-visible-server" title="Externally Visible Server:" class="md-nav__link">
+    Externally Visible Server:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-when-type-flask-run" title="what happens when type flask run?" class="md-nav__link">
+    what happens when type flask run?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug-mode" title="Debug Mode:" class="md-nav__link">
+    Debug Mode:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-rules" title="Variable Rules:" class="md-nav__link">
+    Variable Rules:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unique-urls-redirection-behavior" title="Unique URLs / Redirection Behavior" class="md-nav__link">
+    Unique URLs / Redirection Behavior
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-templates" title="Rendering Templates" class="md-nav__link">
+    Rendering Templates
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example1" title="Example1:" class="md-nav__link">
+    Example1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example2" title="Example2:" class="md-nav__link">
+    Example2:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redirects" title="Redirects:" class="md-nav__link">
+    Redirects:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors" title="Errors:" class="md-nav__link">
+    Errors:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apis-with-json" title="APIs with JSON:" class="md-nav__link">
+    APIs with JSON:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cookies" title="Cookies" class="md-nav__link">
+    Cookies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sessions" title="Sessions:" class="md-nav__link">
+    Sessions:
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="flask">Flask</h1>
+<h3 id="a-minimal-application">A Minimal Application</h3>
+<p>A minimal Flask application looks something like this:</p>
+<pre>
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def get_user_data(user):
+    user_data = db.get(user)
+    return user_Data
+</pre>
+
+<h6 id="so-what-did-that-code-do">So what did that code do?</h6>
+<ol>
+<li>
+<p>First we imported the Flask class. An instance of this class will be our WSGI application.</p>
+</li>
+<li>
+<p>Next we create an instance of this class. The first argument is the name of the application’s module or package. If you are using a single module (as in this example), you should use <strong>name</strong> because depending on if it’s started as application or imported as module the name will be different ('<strong>main</strong>' versus the actual import name). This is needed so that Flask knows where to look for templates, static files, and so on. For more information have a look at the Flask documentation.</p>
+</li>
+<li>
+<p>We then use the route() decorator to tell Flask what URL should trigger our function.</p>
+</li>
+<li>
+<p>The function is given a name which is also used to generate URLs for that particular function, and returns the message we want to display in the user’s browser.</p>
+</li>
+</ol>
+<p>Just save it as hello.py or something similar. Make sure to not call your application flask.py because this would conflict with Flask itself.</p>
+<p>To run the application you can either use the flask command or python’s -m switch with Flask.<br>
+Before you can do that you need to tell your terminal the application to work with by exporting the FLASK_APP environment variable:</p>
+<pre>
+$ export FLASK_APP=hello.py
+$ flask run
+ * Running on http://127.0.0.1:5000/
+ </pre>
+
+<p>Alternatively you can use python -m flask:</p>
+<pre>
+$ export FLASK_APP=hello.py
+$ python -m flask run
+ * Running on http://127.0.0.1:5000/
+</pre>
+
+<p>This launches a very simple builtin server, which is good enough for testing but probably not what you want to use in production</p>
+<h3 id="externally-visible-server">Externally Visible Server:</h3>
+<p>If you run the server you will notice that the server is only accessible from your own computer, not from any other in the network. This is the default because in debugging mode a user of the application can execute arbitrary Python code on your computer.</p>
+<p>If you have the debugger disabled or trust the users on your network, you can make the server publicly available simply by adding --host=0.0.0.0 to the command line:</p>
+<pre>
+flask run --host=0.0.0.0
+</pre>
+
+<p>This tells your operating system to listen on all public IPs.</p>
+<h3 id="what-happens-when-type-flask-run">what happens when type flask run?</h3>
+<h3 id="debug-mode">Debug Mode:</h3>
+<ol>
+<li>server will reload itself on code changes</li>
+<li>provide you with a helpful debugger</li>
+</ol>
+<pre>
+export FLASK_ENV=development
+flask run
+</pre>
+
+<h3 id="variable-rules">Variable Rules:</h3>
+<p>You can add variable sections to a URL by marking sections with <variable_name>. Your function then receives the <variable_name> as a keyword argument. Optionally, you can use a converter to specify the type of the argument like <converter:variable_name>.</p>
+<pre><code>from flask import Flask, render_template, escape
+app = Flask(__name__)
+
+@app.route('/user/&lt;username&gt;')
+def show_user_profile(username):
+    # show the user profile for that user
+    return 'User %s' % escape(username)
+
+@app.route('/post/&lt;int:post_id&gt;')
+def show_post(post_id):
+    # show the post with the given id, the id is an integer
+    return 'Post %d' % post_id
+
+@app.route('/path/&lt;path:subpath&gt;')
+def show_subpath(subpath):
+    # show the subpath after /path/
+    return 'Subpath %s' % subpath
+</code></pre>
+<p>types of converters: <br>
+1. string <br>
+2. int<br>
+3. float<br>
+4. path<br>
+5. uuid<br></p>
+<h3 id="unique-urls-redirection-behavior">Unique URLs / Redirection Behavior</h3>
+<p>The following two rules differ in their use of a trailing slash.</p>
+<pre><code>from flask import Flask
+app = Flask(__name__)
+
+@app.route('/projects/')
+def projects():
+    return 'The project page'
+
+@app.route('/about')
+def about():
+    return 'The about page'
+</code></pre>
+<h3 id="rendering-templates">Rendering Templates</h3>
+<h4 id="example1">Example1:</h4>
+<p>Flask configures the Jinja2 template engine for you automatically<br>
+we can use render_template method to render htmls.</p>
+<pre><code>from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route('/hello/')
+@app.route('/hello/&lt;name&gt;')
+def hello(name=None):
+    return render_template('hello.html', name=name)
+</code></pre>
+<p>hello.html</p>
+<pre><code>&lt;!doctype html&gt;
+&lt;title&gt;Hello from Flask&lt;/title&gt;
+{% if name %}
+  Hello {{name}}
+{% else %}
+   Hello, World!
+{% endif %}
+</code></pre>
+<h4 id="example2">Example2:</h4>
+<p>Web applications use different HTTP methods when accessing URLs. You should familiarize yourself with the HTTP methods as you work with Flask. By default, a route only answers to GET requests. You can use the methods argument of the route() decorator to handle different HTTP methods.</p>
+<pre><code>from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
+            error = 'Invalid Credentials. Please try again.'
+        else:
+            return redirect(url_for('home'))
+    return render_template('login.html', error=error)
+@app.route('/home')
+def home():
+    render_template('home.html')
+</code></pre>
+<p>login.html</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Flask Intro - login page&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link href="static/bootstrap.min.css" rel="stylesheet" media="screen"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      &lt;h1&gt;Please login&lt;/h1&gt;
+      &lt;br&gt;
+      &lt;form action="" method="post"&gt;
+        &lt;input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}"&gt;
+         &lt;input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}"&gt;
+        &lt;input class="btn btn-default" type="submit" value="Login"&gt;
+      &lt;/form&gt;
+      {% if error %}
+        &lt;p class="error"&gt;&lt;strong&gt;Error:&lt;/strong&gt; {{ error }}
+      {% endif %}
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>home.html</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Home page&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link href="static/bootstrap.min.css" rel="stylesheet" media="screen"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      &lt;h1&gt;This is home&lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="redirects">Redirects:</h3>
+<pre><code>from flask import abort, redirect, url_for
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return redirect(url_for('login'))
+
+@app.route('/login')
+def login():
+    return 'Hey.. You just landed on log in page'
+</code></pre>
+<h3 id="errors">Errors:</h3>
+<pre><code>from flask import Flask, redirect, redirect
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return redirect(redirect('login'))
+
+@app.route('/login')
+def login():
+    return 'Hey.. You just landed on log in page'
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return 'Hey.. you landed on mising page..&lt;br&gt;&lt;ul&gt;&lt;li&gt;/&lt;/li&gt; &lt;li&gt;/login&lt;/li&gt; &lt;/ul&gt;'
+</code></pre>
+<h3 id="apis-with-json">APIs with JSON:</h3>
+<pre><code>from flask import Flask, redirect, redirect
+app = Flask(__name__)
+@app.route("/data")
+def data():
+    user = get_current_user()
+    return {
+        "username": user["name"],
+        "age": user['age']
+    }
+
+def get_current_user():
+    return {'name':'ram', 'age':20}
+</code></pre>
+<h3 id="cookies">Cookies</h3>
+<p>setting cookies:</p>
+<pre><code>from flask import Flas, make_response
+app = Flask(__name__)
+
+@app.route('/set_cookie')
+def set_cookie():
+    resp = make_response('hello world')
+    username = request.args.get('username')
+    resp.set_cookie('username', username)
+    return resp
+</code></pre>
+<p>reading cookies</p>
+<pre><code>from flask import Flask, request
+app = Flask(__name__)
+
+@app.route('/get_cookie')
+def read_cookie():
+    username = request.cookies.get('username')
+    return 'hello %'%username
+</code></pre>
+<h3 id="sessions">Sessions:</h3>
+<pre><code>from flask import Flask, session, redirect, url_for, escape, request
+app = Flask(__name__)
+
+ # Set the secret key to some random bytes. Keep this really secret!
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+
+@app.route('/')
+def index():
+    if 'username' in session:
+        return 'Logged in as %s' % escape(session['username'])
+    return 'You are not logged in'
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        session['username'] = request.form['username']
+        return redirect(url_for('index'))
+    return '''
+        &lt;form method="post"&gt;
+            &lt;p&gt;&lt;input type=text name=username&gt;
+            &lt;p&gt;&lt;input type=submit value=Login&gt;
+        &lt;/form&gt;
+    '''
+
+@app.route('/logout')
+def logout():
+    # remove the username from the session if it's there
+    session.pop('username', None)
+    return redirect(url_for('index'))
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../internals/" title="Python internals" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Python internals
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../flaskdb/" title="Python With Mysql" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Python With Mysql
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
