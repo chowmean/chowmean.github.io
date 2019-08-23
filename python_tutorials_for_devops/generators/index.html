@@ -36,7 +36,7 @@
     
     
       
-        <title>Basic Tooling for Python - Python Training for Devops.</title>
+        <title>Generators - Python Training for Devops.</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#starting-a-project" tabindex="1" class="md-skip">
+      <a href="#generators" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Basic Tooling for Python
+                Generators
               
             </span>
           
@@ -228,103 +228,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Basic Tooling for Python
-      </label>
-    
-    <a href="./" title="Basic Tooling for Python" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../tooling/" title="Basic Tooling for Python" class="md-nav__link">
       Basic Tooling for Python
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-start-development" title="How to start development?" class="md-nav__link">
-    How to start development?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#virutalenv" title="VirutalENV:" class="md-nav__link">
-    VirutalENV:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pep8-formatting" title="Pep8 formatting." class="md-nav__link">
-    Pep8 formatting.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dependency-management" title="Dependency Management" class="md-nav__link">
-    Dependency Management
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-to-install-python-package" title="How to install python package:" class="md-nav__link">
-    How to install python package:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-install-using-requirementstxt" title="How to install using requirements.txt" class="md-nav__link">
-    How to install using requirements.txt
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#editor" title="Editor?" class="md-nav__link">
-    Editor?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -476,11 +384,90 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../generators/" title="Generators" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Generators
+      </label>
+    
+    <a href="./" title="Generators" class="md-nav__link md-nav__link--active">
       Generators
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-yield" title="What is yield?" class="md-nav__link">
+    What is yield?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advantages-of-generators" title="Advantages of generators" class="md-nav__link">
+    Advantages of generators
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memory-efficient-and-lazy-processing" title="Memory Efficient and lazy processing." class="md-nav__link">
+    Memory Efficient and lazy processing.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infinite-sequence-of-data" title="Infinite Sequence of data" class="md-nav__link">
+    Infinite Sequence of data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterator-by-default" title="Iterator by default" class="md-nav__link">
+    Iterator by default
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-generator-experssion" title="Python generator experssion" class="md-nav__link">
+    Python generator experssion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -505,45 +492,37 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-start-development" title="How to start development?" class="md-nav__link">
-    How to start development?
+  <a href="#what-is-yield" title="What is yield?" class="md-nav__link">
+    What is yield?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advantages-of-generators" title="Advantages of generators" class="md-nav__link">
+    Advantages of generators
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#virutalenv" title="VirutalENV:" class="md-nav__link">
-    VirutalENV:
+  <a href="#memory-efficient-and-lazy-processing" title="Memory Efficient and lazy processing." class="md-nav__link">
+    Memory Efficient and lazy processing.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pep8-formatting" title="Pep8 formatting." class="md-nav__link">
-    Pep8 formatting.
+  <a href="#infinite-sequence-of-data" title="Infinite Sequence of data" class="md-nav__link">
+    Infinite Sequence of data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dependency-management" title="Dependency Management" class="md-nav__link">
-    Dependency Management
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-to-install-python-package" title="How to install python package:" class="md-nav__link">
-    How to install python package:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-install-using-requirementstxt" title="How to install using requirements.txt" class="md-nav__link">
-    How to install using requirements.txt
+  <a href="#iterator-by-default" title="Iterator by default" class="md-nav__link">
+    Iterator by default
   </a>
   
 </li>
@@ -552,16 +531,11 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#editor" title="Editor?" class="md-nav__link">
-    Editor?
+      
+        <li class="md-nav__item">
+  <a href="#python-generator-experssion" title="Python generator experssion" class="md-nav__link">
+    Python generator experssion
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -582,38 +556,52 @@
               
                 
                 
-                <p>To begin with python tooling, lets first see what these tools are used for. </p>
-<h1 id="starting-a-project">Starting a project</h1>
-<p>To start any project it is always recommended to create the project in its own environment. This means that anything that is installed for python at global level will not affect this env anf vice versa. </p>
-<h2 id="how-to-start-development">How to start development?</h2>
-<h3 id="virutalenv">VirutalENV:</h3>
-<p>Install virtualenv</p>
-<pre><code>sudo apt-get install virtualenv
-</code></pre>
-<p>After installation activate it. </p>
-<pre><code>virtualenv env_name -m python3
-</code></pre>
-<p>This will create an env for python 3 and you can start working inside it. Keep in mind that you have to activate the env before running your code to make it work. </p>
-<p>Activate env:</p>
-<pre><code>sourve env_name/bin/activate
-</code></pre>
-<p>Now you can install any packages that you want to use in your python program. </p>
-<p>Deactivate env: </p>
-<pre><code>deactivate
-</code></pre>
-<h3 id="pep8-formatting">Pep8 formatting.</h3>
-<p>Pep8 is the formatting style that defines how you should format your python program. How you should name your variables and more such conventions. 
-Pep8 is highly recommende for anyone who want to work with opensource community. </p>
-<h3 id="dependency-management">Dependency Management</h3>
-<p>For dependency management in python we use pip. It is used for installing packages. You can have a file naming requirements.txt which will have all the packages that you need to install along with the version that you want to install. </p>
-<h5 id="how-to-install-python-package">How to install python package:</h5>
-<pre><code>pip install package_name
-</code></pre>
-<h5 id="how-to-install-using-requirementstxt">How to install using requirements.txt</h5>
-<pre><code>pip install -r requirements.txt
-</code></pre>
-<h3 id="editor">Editor?</h3>
-<p>Pycharm is very good for python but if you are power user of sublime that will be awesome. </p>
+                <h1 id="generators">Generators</h1>
+<p>Generators are just like normal functions, what makes functions generators in yield statement instead of return statement. </p>
+<h2 id="what-is-yield">What is yield?</h2>
+<p>Yield is a key word that is used to return the value only, the difference is it is used to induce the lazy processing capability. What is does is it returns the state of the functions at that time and save it locally so that it can be resumed from there in the next iteration. 
+So it actually doesn't generate any value but save the function state so that it can be generated on the run time. Have a look at the code below </p>
+<pre>
+def testgen():
+    for i in range(10000):
+        yield i
+</pre>
+
+<p>So what is happening here is we have created a generator using yeild. Yeild creates an itertor by itself so it works out of the box from with <code>for-in</code></p>
+<p>In the above function we have created a generator that is generating list from 0,9999. </p>
+<h2 id="advantages-of-generators">Advantages of generators</h2>
+<p>Generator have following advantages
+- They don't process at the same time but does lazy loading so when the value is required it gets executed and gets the data. 
+- They help a lot in saving memory by not generating and saving things in memory all at once.</p>
+<h3 id="memory-efficient-and-lazy-processing">Memory Efficient and lazy processing.</h3>
+<p>Lets have a look at the code below. </p>
+<pre>
+from sys import getsizeof
+
+def tesgen():
+        for i in range(10000):
+                yield i
+
+b = [x for x in range(10000)]
+print(getsizeof(b))
+
+a = tesgen()
+print(getsizeof(a))
+</pre>
+
+<p>If you can run this program you can see the difference between memory consumption in both the cases. Lets discuss why there is so much difference in memroy consumption here. </p>
+<p>Memory difference is because there is no acutal calculation and storing of the values in the memory. </p>
+<h3 id="infinite-sequence-of-data">Infinite Sequence of data</h3>
+<p>It is easy to have an infinite sequence of data with generators because of the memory advantage otherwise for infite sequence of data you need infinite RAM. </p>
+<h3 id="iterator-by-default">Iterator by default</h3>
+<p>Generators automatically define <code>__iter__</code> and <code>__next__</code>. Thus these can be used directly with <code>for-in</code> and has iterators. You can get the iterators using <code>iter</code> key word.</p>
+<h2 id="python-generator-experssion">Python generator experssion</h2>
+<pre>
+a = (x**2 for x in my_list)
+</pre>
+
+<p>Above code creates generator, what you need to do this is use <code>()</code> with your normal expression. </p>
+<p>This was introduction to generators. These are very powerful and you can use them to accomplish different tasks. Now its upto you how you will dig deeper and use it. </p>
                 
                   
                 
@@ -634,7 +622,7 @@ Pep8 is highly recommende for anyone who want to work with opensource community.
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../oops/" title="Object Oriented Programming" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../iterators/" title="Iterators and how to create one" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -643,25 +631,11 @@ Pep8 is highly recommende for anyone who want to work with opensource community.
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Object Oriented Programming
+                Iterators and how to create one
               </span>
             </div>
           </a>
         
-        
-          <a href="../best_practices/" title="Best Practices for programming and python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Best Practices for programming and python
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
