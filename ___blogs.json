@@ -1,0 +1,52 @@
+[
+  { "id":1,
+    "name": "Uber Engineering",
+    "link":"https://eng.uber.com/",
+    "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/220px-Uber_logo_2018.svg.png"
+  },
+  { "id":2,
+    "name": "LinkedIn Engineering",
+    "link":"https://engineering.linkedin.com/",
+    "img":"https://lh3.googleusercontent.com/z0gMa0aRAkLxjS-lVaSOO1Ygb48rttOcR5iRpgJPTM6_enkfeCuN37JWm_9qcHJaJw"
+  },
+  { "id":3,
+    "name": "Airbnb Engineering",
+    "link":"https://medium.com/airbnb-engineering",
+    "img":"https://miro.medium.com/max/1068/1*BsKbDTA9ZUVroeJ7asId4Q.png"
+  },
+  { "id":4,
+    "name": "Facebook Engineering",
+    "link":"https://engineering.fb.com/",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSymnJnN70UrFeJ5YZC4by9qJh6utB9GwD447N9X1SVuWK6YIhS"
+  },
+  { "id":5,
+    "name": "Netflix Engineering",
+    "link":"https://medium.com/netflix-techblog",
+    "img":"https://cdn-images-1.medium.com/max/303/1*rOPLUJ3W6FUA3rO1U1IeuA@2x.png"
+  },
+  { "id":6,
+    "name": "Gojek Engineering",
+    "link":"https://blog.gojekengineering.com/",
+    "img":"https://conference.sarccom.org/wp-content/uploads/2019/04/New-GOJEK-Logo-03-2-860x340.png"
+  },
+  { "id":7,
+    "name": "Google Developers Blog",
+    "link":"https://developers.googleblog.com/",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQklFIUppXln96bS6NVQOBzYWvOqJ4MlFrd39PM-GfuUnNfrhEV"
+  },
+  { "id":8,
+    "name": "Twitter Engineering Blog",
+    "link":"https://blog.twitter.com/engineering/en_us.html",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTL5yMhTCXyIuGmKN39d4E5VhNWicwqdSvzVvEVKe7rCFIszks"
+  },
+  { "id":9,
+    "name": "Mozilla Hack",
+    "link":"https://hacks.mozilla.org/",
+    "img":"https://i.pinimg.com/originals/db/61/20/db6120d682d65ad472ede7c27a5b90c9.png"
+  },
+  { "id":10,
+    "name": "Github Engineering",
+    "link":"https://github.blog/category/engineering/",
+    "img":"https://github.githubassets.com/images/modules/open_graph/github-octocat.png"
+  }
+]
