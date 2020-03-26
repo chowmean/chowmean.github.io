@@ -4,6 +4,11 @@
     "name": "Brendan D. Gregg",
     "link":"http://www.brendangregg.com/",
     "img":"http://www.brendangregg.com/Images/brendan_rajasthan2011_thumb.jpg"
+  },
+  { "id":2,
+    "name": "Julia Evans",
+    "link":"https://jvns.ca/",
+    "img":"https://pbs.twimg.com/profile_images/846106819391115264/iZAxk4qr_400x400.jpg"
   }
 ]
 }
