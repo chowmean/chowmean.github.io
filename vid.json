@@ -1,14 +1,14 @@
 {
   "data":[
   { "id":1,
-    "name": "Redis Backup and restore",
+    "name": "Redis Backup and restore to new cluster",
     "url":"https://www.youtube.com/embed/TCDU5H8-FaU",
     "link":"TCDU5H8-FaU"
   },
   { "id":2,
-    "name":"Asdsaad",
-    "url":"https://www.youtube.com/embed/TCDU5H8-FaU",
-    "link":"TCDU5H8-FaU"
+    "name":"Capacity management using little's law instead of rate limiting.",
+    "url":"https://www.youtube.com/embed/m64SWl9bfvk",
+    "link":"m64SWl9bfvk"
   }
 ]
 }
