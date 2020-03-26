@@ -39,6 +39,11 @@
     "name":"What is a Container?",
     "url":"https://www.youtube.com/embed/EnJ7qX9fkcU",
     "link":"EnJ7qX9fkcU"
+  },
+  { "id":8,
+    "name":"Networking with Kubernetes",
+    "url":"https://www.youtube.com/embed/WwQ62OyCNz4",
+    "link":"WwQ62OyCNz4"
   }
 ]
 }
