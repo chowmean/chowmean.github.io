@@ -2,11 +2,11 @@
   "data":[
   { "id":1,
     "name": "Redis Backup and restore",
-    "link":"https://www.youtube.com/watch?v=TCDU5H8-FaU"
+    "link":"https://www.youtube.com/embed/TCDU5H8-FaU"
   },
   { "id":2,
     "name": "LinkedIn Engineering",
-    "link":"https://www.youtube.com/watch?v=TCDU5H8-FaU"
+    "link":"https://www.youtube.com/embed/TCDU5H8-FaU"
   }
 ]
 }
