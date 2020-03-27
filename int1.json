@@ -41,10 +41,16 @@
         "link":""
     },
     { "id":9,
-        "question": "What is the signal used to kill process gracefully?",
-        "answer":"kill -15 processid. This is also called SIGTERM(15)",
+        "question": "How to create an empty file?",
+        "answer":"touch filenaem",
+        "link":""
+    },
+    { "id":10,
+        "question": "How to check free memory?",
+        "answer":"free -m",
         "link":""
     }
+
   ]
 }
   
