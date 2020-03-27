@@ -6,7 +6,7 @@
       "link":""
     },
     { "id":2,
-      "question":"How to list all hiden files in linux?",
+      "question":"How to list all hidden files in linux?",
       "answer":"This command can do it. ls -a",
       "link":""
     },
@@ -24,6 +24,26 @@
       "question": "What are the three numbers in load average?",
       "answer":"First number is load average for 1 min second is for 5 and third is for 15 min.",
       "link":""
+    },
+    { "id":6,
+        "question": "What do you mean by load average?",
+        "answer":"Load average stands for the total number of tasks waiting for CPU in queue. In other words the number of tasks that are not getting CPU resource.",
+        "link":""
+    },
+    { "id":7,
+        "question": "What is the signal used to kill process forcefully?",
+        "answer":"kill -9 processid. This is also called SIGKILL(9)",
+        "link":""
+    },
+    { "id":8,
+        "question": "What is the signal used to kill process gracefully?",
+        "answer":"kill -15 processid. This is also called SIGTERM(15)",
+        "link":""
+    },
+    { "id":9,
+        "question": "What is the signal used to kill process gracefully?",
+        "answer":"kill -15 processid. This is also called SIGTERM(15)",
+        "link":""
     }
   ]
 }

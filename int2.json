@@ -1,0 +1,35 @@
+{
+    "data":[
+    { "id":11,
+      "question":"What is a socket?",
+      "answer":"Socket is a combination of port + ip + protocol. Sockets allow communication between two processes on the same or different hosts that are connected by internet.",
+      "link":""
+    },
+    { "id":12,
+      "question":"How many IPS are there is 10.28.0.0/16 CIDR?",
+      "answer":"This will be 2^32-16 IP which is 2^16 = 65536",
+      "link":""
+    },
+    { "id":13,
+      "question":"Which port dns works on?",
+      "answer":"53",
+      "link":""
+    },
+    { "id":14,
+      "question":"Dns uses which protocol?",
+      "answer":"udp",
+      "link":""
+    },
+    { "id":15,
+      "question": "Can DNS work on tcp?",
+      "answer":"Yes, but it will be slow which is not expection from dns.",
+      "link":""
+    },
+    { "id":16,
+        "question": "Keep a watch we will keep posting more questions here.",
+        "answer":"",
+        "link":""
+    }
+  ]
+}
+  
