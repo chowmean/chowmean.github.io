@@ -1,49 +1,29 @@
 {
   "data":[
+  { "id":6,
+    "name":"How to install DNS server. Running it in your local Ubuntu16",
+    "url":"https://www.youtube.com/embed/is2KU8iUObE",
+    "link":"is2KU8iUObE"
+  },
+  { "id":7,
+    "name":"How to install Nginx on Ubuntu 16.04 and see if its working",
+    "url":"https://www.youtube.com/embed/uW9cUlUvaiI",
+    "link":"uW9cUlUvaiI"
+  },
+  { "id":8,
+    "name":"What is a Container?",
+    "url":"https://www.youtube.com/embed/EnJ7qX9fkcU",
+    "link":"EnJ7qX9fkcU"
+  },
+  { "id":9,
+    "name":"Networking with Kubernetes",
+    "url":"https://www.youtube.com/embed/WwQ62OyCNz4",
+    "link":"WwQ62OyCNz4"
+  },
   { "id":10,
     "name": "What's the Difference Between DevOps and SRE? (class SRE implements DevOps)",
     "url":"https://www.youtube.com/embed/uTEL8Ff1Zvk",
     "link":"uTEL8Ff1Zvk"
-  },
-  { "id":11,
-    "name":"SLIs, SLOs, SLAs, oh my! (class SRE implements DevOps)",
-    "url":"https://www.youtube.com/embed/m64SWl9bfvk",
-    "link":"m64SWl9bfvk"
-  },
-  { "id":12,
-    "name":"Risk and Error Budgets (class SRE implements DevOps)",
-    "url":"https://www.youtube.com/embed/y2ILKr8kCJU",
-    "link":"y2ILKr8kCJU"
-  },
-  { "id":13,
-    "name":"Toil and Toil Budgets (class SRE implements DevOps)",
-    "url":"https://www.youtube.com/embed/IvQ-15-yE_c",
-    "link":"IvQ-15-yE_c"
-  },
-  { "id":14,
-    "name":"Managing Risks as a Site Reliability Engineer (class SRE implements DevOps)",
-    "url":"https://www.youtube.com/embed/4kGu1_M7Igg",
-    "link":"4kGu1_M7Igg"
-  },
-  { "id":15,
-    "name":"Rob Pike - 'Concurrency Is Not Parallelism'",
-    "url":"https://www.youtube.com/embed/cN_DpYBzKso",
-    "link":"cN_DpYBzKso"
-  },
-  { "id":16,
-    "name":"How we program multicores - Joe Armstrong",
-    "url":"https://www.youtube.com/embed/bo5WL5IQAd0",
-    "link":"bo5WL5IQAd0"
-  },
-  { "id":17,
-    "name":"DevOps Engineer Roles & Responsibilities | Valaxy Technologies",
-    "url":"https://www.youtube.com/embed/7LIXqe_0w10",
-    "link":"7LIXqe_0w10"
-  },
-  { "id":18,
-    "name":"Which DevOps tools should I Learn to become a DevOps Engineer",
-    "url":"https://www.youtube.com/embed/qasUBr5D9bo",
-    "link":"qasUBr5D9bo"
   }
 ]
 }

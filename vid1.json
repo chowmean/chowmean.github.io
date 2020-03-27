@@ -24,26 +24,6 @@
     "name":"Introduction to Microservices, Docker, and Kubernetes",
     "url":"https://www.youtube.com/embed/1xo-0gCVhTU",
     "link":"1xo-0gCVhTU"
-  },
-  { "id":6,
-    "name":"How to install DNS server. Running it in your local Ubuntu16",
-    "url":"https://www.youtube.com/embed/is2KU8iUObE",
-    "link":"is2KU8iUObE"
-  },
-  { "id":7,
-    "name":"How to install Nginx on Ubuntu 16.04 and see if its working",
-    "url":"https://www.youtube.com/embed/uW9cUlUvaiI",
-    "link":"uW9cUlUvaiI"
-  },
-  { "id":8,
-    "name":"What is a Container?",
-    "url":"https://www.youtube.com/embed/EnJ7qX9fkcU",
-    "link":"EnJ7qX9fkcU"
-  },
-  { "id":9,
-    "name":"Networking with Kubernetes",
-    "url":"https://www.youtube.com/embed/WwQ62OyCNz4",
-    "link":"WwQ62OyCNz4"
   }
 ]
 }
