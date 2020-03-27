@@ -1,28 +1,28 @@
 {
     "data":[
     { "id":1,
-      "name":"Command to check the ip of a dns",
+      "question":"Command to check the ip of a dns?",
       "answer":"You can use tool like dig, by using the this command: dig dnsname",
       "link":""
     },
     { "id":2,
-      "name":"How to list all hiden files in linux?",
+      "question":"How to list all hiden files in linux?",
       "answer":"This command can do it. ls -a",
       "link":""
     },
     { "id":3,
-      "name":"Which tool do you use to search in a file?",
+      "question":"Which tool do you use to search in a file?",
       "answer":"grep",
       "link":""
     },
     { "id":4,
-      "name":"How to check if port is reachable?",
-      "url":"telnet IP PORT",
+      "question":"How to check if port is reachable?",
+      "answer":"telnet IP PORT",
       "link":""
     },
     { "id":5,
-      "name": "What are the three numbers in load average?",
-      "url":"First number is load average for 1 min second is for 5 and third is for 15 min.",
+      "question": "What are the three numbers in load average?",
+      "answer":"First number is load average for 1 min second is for 5 and third is for 15 min.",
       "link":""
     }
   ]
