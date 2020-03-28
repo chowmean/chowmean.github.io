@@ -22,7 +22,7 @@
     },
     { "id":15,
       "question": "Can DNS work on tcp?",
-      "answer":"Yes, but it will be slow which is not expection from dns.",
+      "answer":"Yes, but it will be slow which is not expected from dns.",
       "link":""
     },
     { "id":16,
