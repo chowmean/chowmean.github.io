@@ -1,0 +1,35 @@
+{
+    "data":[
+    { "id":21,
+      "question":"Where to see system logs?",
+      "answer":"You can find these logs in /var/syslog file.",
+      "link":""
+    },
+    { "id":22,
+      "question":"In systemd systems how can you see the logs after last bootup?",
+      "answer":"You can use this command. journalctl -b",
+      "link":""
+    },
+    { "id":23,
+      "question":"Where can you see information on what users logged into the system?",
+      "answer":"You can find these infomation in lastlog which is located at /var/lastlog",
+      "link":""
+    },
+    { "id":24,
+      "question":"How to check the directories which are using most space?",
+      "answer":"You can use this command. du -sch *",
+      "link":""
+    },
+    { "id":25,
+      "question": "How to see number of files that are opened by OS?",
+      "answer":"You can use this command. lsof| wc -l",
+      "link":""
+    },
+    { "id":26,
+        "question": "Keep a watch in this section new questions are updated everyday.",
+        "answer":"",
+        "link":""
+    }
+  ]
+}
+  

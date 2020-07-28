@@ -22,12 +22,32 @@
     },
     { "id":15,
       "question": "Can DNS work on tcp?",
-      "answer":"Yes, but it will be slow which is not expection from dns.",
+      "answer":"Yes, but it will be slow which is not expected from dns.",
       "link":""
     },
     { "id":16,
-        "question": "Keep a watch we will keep posting more questions here.",
-        "answer":"",
+        "question": "IP(Internet Protocol) is a reliable protocol, True or false? ",
+        "answer":"False. It is best effort delivery",
+        "link":""
+    },
+    { "id":17,
+        "question": "What adds reliability to the TCP or why you say tcp is a reliable protocol?",
+        "answer":"First it does 3 way handshake to the host, next it has mechanism of retries and acknowledgement that adds reliability to it.",
+        "link":""
+    },
+    { "id":18,
+        "question": "How can you keep a watch on out put of command?",
+        "answer":"watch `command`",
+        "link":""
+    },
+    { "id":19,
+        "question": "Where are the logs generally kept?",
+        "answer":"You can find them in /var/log but its not sure to always be here. It can depend on applications where they want to keep the logs.",
+        "link":""
+    },
+    { "id":20,
+        "question": "In which file you can configure what nameserver to use to resolve your dns queries?",
+        "answer":"In /etc/resolv.conf, you specify these settings.",
         "link":""
     }
   ]
