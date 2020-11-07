@@ -1,0 +1,53 @@
+{
+    "data":[
+    { "id":31,
+      "question":"How to see the last run commands?",
+      "answer":"With history command you can do it." ,
+      "link":""
+    },
+    { "id":32,
+      "question":"What are two concepts of linux used to create containers?",
+      "answer":"Cgroups and namespaces" ,
+      "link":""
+    },
+    { "id":33,
+      "question":"What are Cgroups?",
+      "answer":"Cgroups or control groups are used to control the usage of resources used by any process or entity. You can put a restriction of what amount of resources can be used by any entity." ,
+      "link":""
+    },
+    { "id":34,
+      "question":"What is context switch?",
+      "answer":"There can be multiple process running in a system. The number of core present in system can be less than the process running. So CPU has to be allocated to each of the process in a way that none of the process is stuck for long time. To do so, one process is removed and its state is saved while the other one is loaded in the CPU this process is called context switch",
+      "link":""
+    },
+    { "id":35,
+      "question":"What amoung these a threads does not share? Program Counter, Heap, Stack",
+      "answer":"Threads don't share program counter and stack." ,
+      "link":""
+    },
+    { "id":36,
+      "question":"In which file you can see the command executed for process ID 1.",
+      "answer":"In /proc/1/cmdline you will be able to see the command executed for this process." ,
+      "link":""
+    },
+    { "id":37,
+      "question":"How many FROM commands can be there in a Dockerfile?",
+      "answer":"There can be multiple FROM commands in a multi-stage build Dockerfile." ,
+      "link":""
+    },
+    { "id":38,
+      "question":"What is CMD command in Dockerfile?",
+      "answer":"CMD commands tell what command to run when starting the docker image" ,
+      "link":""
+    },
+    { "id":39,
+      "question":"How you build a image with docker and give it a tag: learnsteps:latest?",
+      "answer":"docker build . -t learnsteps:latest" ,
+      "link":""
+    },
+    { "id":40,
+      "question":"How will you be able to list all crons?",
+      "answer":"crontab -l will list down the crons installed." ,
+      "link":""
+    }
+}
