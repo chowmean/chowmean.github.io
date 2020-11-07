@@ -26,8 +26,28 @@
       "link":""
     },
     { "id":26,
-        "question": "Keep a watch in this section new questions are updated everyday.",
-        "answer":"",
+        "question": "Which command does not apply to a folder out of these: cat, file, rm -r, ls",
+        "answer":"cat",
+        "link":""
+    },
+    { "id":27,
+        "question": "What does free command use for?",
+        "answer":"This command is used for check the memory usage status in linux.",
+        "link":""
+    },
+    { "id":28,
+        "question": "How to see listening ports on linux?",
+        "answer":"ss -l will list all the listening ports",
+        "link":""
+    },
+    { "id":29,
+        "question": "How can you take tcp dump?",
+        "answer":"You can use tcp dump utility to take the TCP dump.",
+        "link":""
+    },
+    { "id":30,
+        "question": "How to list files and directories on reverse order of time?",
+        "answer":"ls -ltr",
         "link":""
     }
   ]
